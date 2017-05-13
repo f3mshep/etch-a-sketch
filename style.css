@@ -1,0 +1,59 @@
+#etch-a-sketch{
+  padding-top: 60px;
+  width: 800px;
+  height: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #dc4d07;
+  border-radius: 30px;
+}
+
+#leftButton{
+  margin-top: 40px;
+  margin-left: 50px;
+  background-color: #faf6d9;
+  width: 125px;
+  height: 125px;
+  border-radius: 125px;
+  float:left;
+}
+
+#rightButton{
+  margin-top: 40px;
+  margin-right: 50px;
+  background-color: #faf6d9;
+  width: 125px;
+  height: 125px;
+  border-radius: 125px;
+  float:right;
+}
+
+#screen{
+  width: 640px;
+  height: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fdf1cb;
+  justify-content: space-around;
+}
+
+.pixelsX{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.pixelsY{
+   background-color:white;
+   float: left;
+   width: 40px;
+   height: 40px;
+}
+
+.pixelsY:hover{
+  background-color: black;
+}
+
+.pixelsX:hover{
+  background-color: black;
+}
