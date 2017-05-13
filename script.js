@@ -3,15 +3,23 @@
 $(document).ready(function() {
   console.log('ready!')
   var screen = document.getElementById('screen');
-  for (var i = 0; i < 16; i++) {
+  var numberPixels = 51
+  var pixelSize = 640 / numberPixels
+  for (var i = 0; i < numberPixels; i++) {
     screen.innerHTML += '<div class="pixelsY"></div>'
   }
   var pixelsY = document.getElementsByClassName('pixelsY')
-
-  for (var i =0; i < 16; i++ ) {
+  for (var i =0; i < numberPixels; i++ ) {
       pixelsY[i].innerHTML += '<div class="pixelsX"></div>'
-      for (var j =0; j < 16; j++){
+      for (var j =0; j < numberPixels; j++){
         pixelsY[j].innerHTML += '<div class="pixelsX"></div>'
       }
   }
+  $('.pixelsY').width(pixelSize)
+  $('.pixelsX').height(pixelSize)
+
+
+  $('.pixelsX').hover(function() {
+    $(this).addClass('black')
+  })
 })
