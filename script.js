@@ -50,10 +50,11 @@ $(document).ready(function() {
       alert("That is not an acceptable choice. Resetting to default")
       pixelGen(16)
     } 
+    else {
     userInput = parseInt(userInput, 10);
     console.log(userInput)
     pixelGen(userInput);
-
+    }
   });
 
 
